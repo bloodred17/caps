@@ -1,5 +1,5 @@
 {
-  "name": "caps",
+  "name": "@ankur/caps",
   "version": "0.0.0",
   "description": "Smallcaps",
   "main": "dist/libs/small/src/lib/index.js",
@@ -36,7 +36,6 @@
   ],
   "keywords": ["Trial", "Smallcase"],
   "author": "Ankur",
-  "private": true,
   "dependencies": {
     "tslib": "^2.0.0"
   },
