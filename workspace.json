@@ -50,6 +50,38 @@
           }
         }
       }
+    },
+    "small": {
+      "root": "libs/small",
+      "sourceRoot": "libs/small/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/node:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/small",
+            "tsConfig": "libs/small/tsconfig.lib.json",
+            "packageJson": "libs/small/package.json",
+            "main": "libs/small/src/index.ts",
+            "assets": ["libs/small/*.md"]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/small/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/small"],
+          "options": {
+            "jestConfig": "libs/small/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

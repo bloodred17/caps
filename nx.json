@@ -32,6 +32,9 @@
   "projects": {
     "caps": {
       "tags": []
+    },
+    "small": {
+      "tags": []
     }
   }
 }

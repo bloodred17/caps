@@ -1,6 +1,9 @@
 {
   "name": "caps",
   "version": "0.0.0",
+  "description": "Smallcaps",
+  "main": "dist/libs/small/src/lib/index.js",
+  "types": "dist/libs/small/src/lib/index.d.ts",
   "license": "MIT",
   "scripts": {
     "nx": "nx",
@@ -23,8 +26,16 @@
     "update": "nx migrate latest",
     "workspace-generator": "nx workspace-generator",
     "dep-graph": "nx dep-graph",
-    "help": "nx help"
+    "help": "nx help",
+    "prepublishOnly" : "npm test && npm run lint",
+    "version" : "npm run format && git add -A src",
+    "postversion" : "git push && git push --tags"
   },
+  "files": [
+    "dist/**/*"
+  ],
+  "keywords": ["Trial", "Smallcase"],
+  "author": "Ankur",
   "private": true,
   "dependencies": {
     "tslib": "^2.0.0"
