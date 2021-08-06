@@ -1,5 +1,5 @@
 {
-  "name": "@ankur/caps",
+  "name": "caps-taps-naps",
   "version": "0.0.0",
   "description": "Smallcaps",
   "main": "dist/libs/small/src/lib/index.js",
