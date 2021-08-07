@@ -51,6 +51,7 @@
         }
       }
     },
+    "my-test-lib": "libs/my-test-lib",
     "small": {
       "root": "libs/small",
       "sourceRoot": "libs/small/src",

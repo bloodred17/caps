@@ -27,14 +27,17 @@
     "workspace-generator": "nx workspace-generator",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
-    "prepublishOnly" : "npm test && npm run lint",
-    "version" : "npm run format && git add -A src",
-    "postversion" : "git push && git push --tags"
+    "prepublishOnly": "npm test && npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "files": [
     "dist/**/*"
   ],
-  "keywords": ["Trial", "Smallcase"],
+  "keywords": [
+    "Trial",
+    "Smallcase"
+  ],
   "author": "Ankur",
   "dependencies": {
     "tslib": "^2.0.0"

@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@ankur/my-test-lib": ["libs/my-test-lib/src/index.ts"],
       "@caps/small": ["libs/small/src/index.ts"]
     }
   },

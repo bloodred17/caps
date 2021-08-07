@@ -1,0 +1,18 @@
+{
+  "name": "@ankur/my-test-lib",
+  "version": "0.0.1",
+  "description": "Test Library",
+  "main": "",
+  "types": "",
+  "scripts": {
+    "test": "jest --config ./jest.config.json",
+    "build": "nx build my-test-lib",
+    "format": "nx format:write my-test-lib",
+    "lint": "nx lint my-test-lib",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  }
+}
